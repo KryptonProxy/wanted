@@ -7,6 +7,7 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
+import Swal from 'sweetalert2/src/sweetalert2.js';
 
 const useStyles = makeStyles({
   root: {
@@ -19,6 +20,15 @@ const useStyles = makeStyles({
 
 export default function WantedCard() {
   const classes = useStyles();
+
+  const handleClick = () => {
+    Swal.fire({
+      imageUrl: 'https://placeholder.pics/svg/300x1500',
+      imageHeight: 1500,
+      imageAlt: 'A tall image'
+    })
+  }
+
 
   return (
     <Card className={classes.root}>
@@ -42,7 +52,7 @@ export default function WantedCard() {
         <Button size="contained" color="primary" /* Hyperlink to FBI */>
           Contact
         </Button>
-        <Button size="containedl" color="primary" /* Opens SweetAlert2 window (same page) with more information */>
+        <Button size="containedl" color="primary" onClick={()=>handleClick}>
           Learn More
         </Button>
       </CardActions>

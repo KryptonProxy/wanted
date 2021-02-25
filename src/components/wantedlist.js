@@ -2,6 +2,7 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
+import WantedCard from './WantedCard';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -24,16 +25,16 @@ export default function WantedList() {
           <Paper className={classes.paper}/*Header*/>FBI</Paper>
         </Grid>
         <Grid item xs={3}>
-          <Paper className={classes.paper}/* Will contain card */>Card</Paper>
+          <WantedCard />
         </Grid>
         <Grid item xs={3}>
-          <Paper className={classes.paper}/* Will contain card */>Card</Paper>
+          <WantedCard />
         </Grid>
         <Grid item xs={3}>
-          <Paper className={classes.paper}/* Will contain card */>Card</Paper>
+          <WantedCard />
         </Grid>
         <Grid item xs={3}>
-          <Paper className={classes.paper}/* Will contain card */>Card</Paper>
+          <WantedCard />
         </Grid>
       </Grid>
     </div>
