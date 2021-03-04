@@ -40,11 +40,10 @@ export default function WantedCard() {
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="h2" /* <item.title[0]/> */>
-            Wanted 
+            Title 
           </Typography> 
           <Typography variant="body2" color="textSecondary" component="p" /* <item.description[0]/> */>
-            Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging
-            across all continents except Antarctica
+            Shorthand Description 
           </Typography>
         </CardContent>
       </CardActionArea>
@@ -52,7 +51,7 @@ export default function WantedCard() {
         <Button size="contained" color="primary" /* Hyperlink to FBI */>
           Contact
         </Button>
-        <Button size="containedl" color="primary" onClick={()=>handleClick}>
+        <Button size="containedl" color="primary" onClick={()=>handleClick()}>
           Learn More
         </Button>
       </CardActions>
